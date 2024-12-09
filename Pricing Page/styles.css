@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    background-color: #111827;
+    padding: 8rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    justify-content: start;
+    /* align-items: center; */
+}
+
+.header-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.label {
+    width: fit-content;
+    height: auto;
+}
+
+.label p {
+    font-size: 1.1rem;
+    letter-spacing: normal;
+    font-weight: 600;
+    color: #5d80f5;
+}
+
+.heading-text {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.heading-text h1 {
+    width: fit-content;
+    font-size: 3rem;
+    letter-spacing: -0.7px;
+    text-align: center;
+}
+
+.heading-text p {
+    width: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #9CA3AF;
+}
+
+.pricing-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 2.25rem;
+}
+
+.segmented-button {
+    width: fit-content;
+    height: auto;
+}
+
+.button-container {
+    background-color: #1D2432;
+    padding: 0.25rem;
+    border-radius: 1.4rem;
+}
+
+.button-container .active {
+    background-color: #6366F1;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.button-container .inactive {
+    background-color: #1D2432;
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.pricing-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+}
+
+.pricing {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 2.5rem;
+    border: 1px solid #1D2432;
+    border-radius: 2rem;
+}
+
+.active {
+    border: 2px solid #6366F1;
+}
+
+.header-price-button-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap:1rem;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.header .popular {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .popular .tag {
+    padding: 0.1rem 0.65rem;
+    background-color: #6366F1;
+    border-radius: 1.5rem;
+    
+}
+
+.header .popular .tag.none {
+    background-color: #111827;
+}
+
+.header p {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    color: #9CA3AF;
+    font-weight: 500;
+}
+
+.header .popular .tag p {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.header .popular .tag.none p {
+    color: #111827;
+}
+
+.price {
+    width: fit-content;
+    height: auto;
+}
+
+.price h3 {
+    font-family: "satoshi";
+    font-size: 2.5rem;
+}
+
+.price h3 span {
+    font-family: "inter";
+    font-size: 0.95rem;
+    color: #9CA3AF;
+    font-weight: 500;
+}
+
+.button {
+    width: 100%;
+    height: auto;
+}
+
+.button button {
+    width: 100%;
+    background-color: #29303D;
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button button.primary {
+    background-color: #6366F1;
+}
+
+.features {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.features .feature {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.features .feature img {
+    width: 24px;
+    height: 24px;
+}
+
+.features .feature p {
+    font-size: 0.95rem;
+    color: #bec2c9;
+}
+
+.features .feature.none {
+    display: none;
+}
+

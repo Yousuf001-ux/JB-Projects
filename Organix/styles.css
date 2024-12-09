@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.031rem;
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* overflow-y: scroll; */
+}
+
+.sidebar-container {
+    width: 17.6%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.7rem;
+    padding: 2rem 1.5rem;
+    background-color: #faf9f8;
+    overflow-y: auto;
+    border-right: 1px solid #ecebeb;
+}
+
+.logo-container {
+    width: 106px;
+    height: 24px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-side-bar-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.search-main-menu-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.search-container {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0efee;
+    border-radius: 0.75rem;
+}
+
+.search-n-icon {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.875rem;
+}
+
+.search-n-icon p {
+    font-size: 0.875rem;
+    color: #AEAAAA;
+    font-weight: 500;
+}
+
+.command {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    column-gap: 0.5rem;
+}
+
+.command p {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #aeaaaa;
+}
+
+.main-menu-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.main-menu-text {
+    width: fit-content;
+    height: auto;
+}
+
+.main-menu-text h1, .label-text h1{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #AEAAAA;
+    letter-spacing: 0.031rem;
+}
+
+.main-menu-links {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu-links .link {
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 1rem;
+    padding: 0.875rem 0.875rem;
+}
+
+.link:hover {
+    background-color: #edecf5;
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+.main-menu-links .link p {
+    font-size: 0.875rem;
+    color: #AEAAAA;
+    font-weight: 600;
+}
+
+.main-menu-links .link.tasks {
+    background-color: #edecf5;
+    border-radius: 0.75rem;
+}
+
+.main-menu-links .link.tasks p {
+    color: #5353CB;
+}
+
+.labels-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.labels-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0.875rem 0.875rem;
+}
+
+.label .colored-dot {
+    width: 12px;
+    height: 12px;
+    background-color: grey;
+    border-radius: 200px;
+}
+
+.label .colored-dot.one {
+    background-color: #00b4cc;
+}
+
+.label .colored-dot.two {
+    background-color: #7955f2;
+}
+
+.label .colored-dot.three {
+    background-color: #f77e4a;
+}
+
+.label .colored-dot.four {
+    background-color: #d049f2;
+}
+
+.label p {
+    font-size: 0.875rem;
+    color: #AEAAAA;
+    font-weight: 600;
+}
+
+.main-container {
+    width: 82.4%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+.header {
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: #faf9f8;
+    border-bottom: 1px solid #ecebeb;
+}
+
+.right-content {
+    width: fit-content;
+    height: auto;
+}
+
+.right-content h1 {
+    font-size: 1.5rem;
+    color: #090b03;
+}
+
+.left-content {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.add-task {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+    padding: 0.65rem 1.05rem;
+    border: 2px solid #5353CB;
+    border-radius: 0.65rem;
+}
+
+.add-task p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #5353CB;
+}
+
+.left-content .profile {
+    width: 45px;
+    height: 45px;
+}
+
+.left-content .profile img {
+    width: 100%;
+    height: 100%;
+}
+
+.tasks-container {
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    overflow: auto;
+}
+
+.tasks-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-bottom: 1px solid #ecebeb;
+}
+
+.task-left-content {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board, .table, .calendar {
+    width: fit-content;
+    height: auto;
+    padding: 0.875rem 1.5rem;
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.board p, .table p, .calendar p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #AEAAAA;
+}
+
+.board.active {
+    border-bottom: 2px solid #5353CB;
+}
+
+.board.active p {
+    color: #5353CB;
+}
+
+.task-right-content {
+    width: fit-content;
+    height: auto;
+    display: flex;
+}
+
+.filter, .sort, .sort {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    column-gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.filter p, .sort p, .sort p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #AEAAAA;
+}
+
+.tasks-status {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-top: 1.5rem;
+    justify-content: space-between;
+    column-gap: 2rem;
+}
+
+.to-do, .in-progress, .done {
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.status {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #AEAAAA;
+    border-radius: 0.75rem;
+}
+
+.status.left {
+    background-color: #ebe5ff;
+}
+
+.status .plus-wrapper {
+    padding: 0.5rem;
+    border-radius: 100rem;
+    background-color: #f5f2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status h1 {
+    font-size: 1.2rem;
+}
+
+.to-do-cards-container, .in-progress-task-container, .done-tasks-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+    border: 1px solid #ecebeb;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.25rem;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    border: none;
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 5%), -4px -4px 10px 2px rgba(0, 0, 0, 5%) ;
+}
+
+.tag-menu-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tag {
+    width: fit-content;
+    height: auto;
+}
+
+.tag h1 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #f77e4a;
+}
+
+.in-progress .i-one .tag h1 {
+    color: #9383F5;
+}
+
+.in-progress .i-two .tag h1 {
+    color: #d45af3;
+}
+
+.done .d-two .tag h1 {
+    color: #00a9c4;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.content-container .top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.top h1 {
+    font-size: 1rem;
+    color: #090b03;
+}
+
+.top p {
+    font-size: 0.85rem;
+    color: #AEAAAA;
+    font-weight: 600;
+}
+
+.middle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.priority {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    column-gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #fff3e6;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+.priority p {
+    font-size: 0.85rem;
+    color: #FF972F;
+    font-weight: 500;
+}
+
+.deadline {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    column-gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #f1f1f1;
+    align-items: center;
+    border-radius: 0.25rem;
+}
+
+.deadline p {
+    font-size: 0.85rem;
+    color: #AEAAAA ;
+    font-weight: 500;
+}
+
+.bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-members {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;;
+}
+
+.team-members img {
+    width: 36px;
+    height: 36px;
+}
+
+.team-members img.two {
+    margin-left: -8px;
+}
+
+.quick-links {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.attachments, .comments {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    column-gap: 0.25rem;
+    align-items: center;
+}
+
+.quick-links p {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #5c5b5b;
+}
+
+.middle {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.details {
+    width: 100%;
+    height: auto;
+}
+
+.details p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #5c5b5b;
+    line-height: 160%;
+}
+
+.status.middle {
+    background-color: #f1e8f3;
+}
+
+.status.right {
+    background-color: #e3f7DA;
+}

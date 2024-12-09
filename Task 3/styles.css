@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+.main-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.main-container .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 1.5rem;
+    border-right: 1px solid #ddd;
+    padding: 2rem;
+}
+
+.card.last {
+    border-radius: 0.5rem;
+}
+
+.main-container .card .money {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.main-container .card .money div {
+    width: 100%;
+    height: auto;
+}
+
+.main-container .card .money div p {
+    font-size: 0.875rem;
+    color: #5c5c5c;
+}
+
+.main-container .card .money div h1 {
+    font-size: 2rem;
+    color: #1b1f24;
+    font-weight: 600;
+}
+
+.main-container .card .rate {
+    width: fit-content;
+    height: auto;
+}
+
+.main-container .card .rate p {
+    font-size: 0.875rem;
+    color: #1b1f24;
+    font-weight: 500;
+}
+
+.main-container .card .red p{
+    color: #eb1414;
+}
+
+
+/* Second dashboard */
+
+
+.container-2 {
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.container-2 .heading {
+    width: fit-content;
+    height: auto;
+}
+
+.container-2 .heading h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #57585a;
+}
+
+.container-2 .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.container-2 .cards .carrd {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ececec;
+}
+
+.container-2 .cards .carrd .content {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.container-2 .cards .carrd .content .label,.figure {
+    width: fit-content;
+    height: auto;
+}
+
+.container-2 .cards .carrd .content .label p {
+    font-size: 0.875rem;
+    color: #57585a;
+}
+
+.container-2 .cards .carrd .content .figure h2 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #1b1f24;
+}
+
+
+/* Third dashboard */
+
+
+.container-3 {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.container-3 .heading {
+    width: fit-content;
+    height: auto;
+}
+
+.container-3 .heading h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #57585a;
+}
+
+.container-3 .dashboards {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+    border-radius: 0.5rem;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.container-3 .dashboards .dashboard {
+    width: 33.33%;
+    height: auto;
+    padding: 1.5rem;
+    border-right: 1px solid #ececec;
+}
+
+.dashboard.card.last {
+    border-radius: 0.5rem;
+}
+
+.container-3 .dashboards .dashboard .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.container-3 .dashboards .dashboard .content .number {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.container-3 .dashboards .dashboard .content .number .label, .value {
+    width: 100%;
+    height: auto;
+}
+
+.container-3 .dashboards .dashboard .content .number .label p {
+    font-size: 0.875rem;
+    color: #57585a;
+    font-weight: 500;
+}
+
+.container-3 .dashboards .dashboard .content .number .value h2 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #0e1ac0;
+}
+
+.container-3 .dashboards .dashboard .content .number .value span {
+    font-size: 0.875rem;
+    color: #848485;
+}
+
+.container-3 .dashboards .dashboard .content .rate {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.25rem;
+    background-color: rgb(214, 241, 225);
+    padding: 0.1rem 0.45rem;
+    border-radius: 0.875rem;
+}
+
+.container-3 .dashboards .dashboard .content .rate.red {
+    background-color:#f8dfdf ;
+}
+
+
+.container-3 .dashboards .dashboard .content .rate .arrow, .percentage {
+    width: fit-content;
+    height: auto;
+}
+
+.container-3 .dashboards .dashboard .content .rate .percentage p {
+    font-size: 12px;
+    color: #156140;
+    font-weight: 500;
+}
+
+.container-3 .dashboards .dashboard .content .rate.red p{
+    color: #E47070;
+}

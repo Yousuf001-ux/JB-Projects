@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.011rem;
+}
+
+.card-container {
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 28%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    padding: 7rem;
+    background-image: url(./fame\ n\ fury.webp);
+    background-color: #f8f8f8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.875rem;
+}
+
+.card-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.675rem;
+    justify-content: start;
+}
+
+.profile-container {
+    width: 32px;
+    height: 32px;
+}
+
+.profile-container img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+}
+
+.card-texts {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.35rem;
+}
+
+.upper-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+}
+
+.title h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.menu {
+    width: fit-content;
+    height: auto;
+}
+
+.lower-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+}
+
+.upper, .lower {
+    width: 100%;
+    height: auto;
+}
+
+.upper, .lower p {
+    font-size: 0.875rem;
+    color: #524c4c;
+    font-weight: 500;
+}
+
+
+

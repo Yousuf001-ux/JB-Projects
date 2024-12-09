@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="heading">
+            <div class="heading-text">
+                <h1>Create Account</h1>
+            </div>
+            <div class="paragraph">
+                <p>Enjoy smooth and stress-free Property Management and Renting with our AI-powered system.</p>
+            </div>
+        </div>
+
+        <div class="horizontal-rule">
+            <hr>
+        </div>
+
+        <div class="form">
+            <form>
+                <div class="full-name-container">
+                    <div class="label">
+                        <label for="fullname">Full Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="fullname" id="fullname" placeholder="John Doe">
+                    </div>
+                </div>
+
+                <div class="email-phone-container">
+                    <div class="email-container">
+                        <div class="label">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="phone-container">
+                        <div class="label">
+                            <label for="phone-number">Phone Number</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" name="phone-number" id="phone-number" placeholder="+234 90000000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="password-container">
+                    <div class="label">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" id="password" placeholder="Enter password">
+                    </div>
+                </div>
+
+                <div class="gender-location-container">
+                    <div class="gender-container">
+                        <div class="label">
+                            <label>Gender</label>
+                        </div>
+                        <div class="radios">
+                            <div class="male">
+                                <input type="radio" name="gender" id="male" value="male">
+                                <label for="male">Male</label>
+                            </div>
+
+                            <div class="female">
+                                <input type="radio" name="gender" id="female" value="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="location-container">
+                        <div class="label">
+                            <label>Location</label>
+                        </div>
+                        <div class="dropdown">
+                            <select name="location" id="location">
+                                <option value="">Select your location</option>
+                                <option value="abia">Abia</option>
+                                <option value="adamawa">Adamawa</option>
+                                <option value="osun">Osun</option>
+                                <option value="ogun">Ogun</option>
+                                <option value="plateau">Plateau</option>
+                                <option value="sokoto">Sokoto</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="primary-button">
+                    <button>Create Account</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="secondary">
+            <div>
+                <p>or</p>
+            </div>
+            <div class="secondary-button">
+                <button>Sign up with Google</button>
+            </div>
+        </div>
+        
+        <div class="tertiary">
+            <p>Already have an acount?<span><a href="#">Login</a></span></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "satoshi";
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.card-container .text-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.card-container .text-content .heading {
+    width: fit-content;
+    height: auto;
+}
+
+.card-container .text-content .heading h1 {
+    font-size: 1.25rem;
+    color: #343434;
+}
+
+.card-container .text-content .paragraph {
+    width: 100%;
+    height: auto;
+}
+
+.card-container .text-content .paragraph p {
+    font-size: 0.875rem;
+    color: #414040;
+    line-height: 160%;
+    letter-spacing: 0.5px;
+}
+
+.card-container .button {
+    width: 100%;
+    height: auto;
+}
+
+.card-container .button button {
+    width: 100%;
+    background-color: rgb(0, 63, 136);
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
